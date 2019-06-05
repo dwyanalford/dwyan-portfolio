@@ -1,0 +1,108 @@
+/* Large devices (laptops/desktops, 1,001px and up to 1,499 px) */
+@media only screen and (min-width: 1001px) {
+  body {
+    /* background-color: #333; */
+    background-color: #fff;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  h2, h3, h4, p, span {
+    color: #d6d6d6;
+  }
+
+  section {
+    height: 400px;
+    /* border: 1px solid #fff; */
+  }
+
+  #hero,
+  #portfolio,
+  #education {
+    width: 50%;
+    float: left;
+  }
+
+  #hero,
+  #portfolio {
+    margin-top: 50px;
+  }
+
+  #portfolio,
+  #work {
+    padding-top: 0;
+  }
+
+  #portfolio .content-wrap {
+    /* border: 1px solid #777; */
+    /* padding: 3em 0; */
+  }
+
+  #skills,
+  #work,
+  #prolinks {
+    width: 50%;
+    float: right;
+  }
+
+  #prolinks p {
+    color: #000;
+  }
+
+  #prolinks table {
+    /* background-color: #cecccc; */
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+  }
+
+  #work {
+    padding-bottom: 5px;
+  }
+
+  #work,
+  #skills {
+    margin-top: 50px;
+  }
+
+  #skills,
+  #hero {
+    height: 500px;
+  }
+
+  /* #skills {
+      background-image: url("images/code_computer_screen_sm.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  } */
+
+  /* #skills table {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+  } */
+
+  /* #skills th {
+    background-color: #fff;
+    color: #000;
+  } */
+
+  #skills td {
+    border: 1px solid #777;
+  }
+
+  #education td {
+    border-bottom: 0;
+  }
+  #education button {
+    margin-top: 15px;
+    display: block;
+  }
+
+  footer {
+    padding-top: 50px;
+  }
+
+}

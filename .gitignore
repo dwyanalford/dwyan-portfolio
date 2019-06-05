@@ -10,6 +10,8 @@
 
 # production
 /build
+/free_images
+/psd
 
 # misc
 .DS_Store

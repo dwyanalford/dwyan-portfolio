@@ -1,33 +1,192 @@
-.App {
+/* Core Styles - Mobile first up to a max width of 1,000 pixels */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+a {
+  color: #4CAE51;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px !Important;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px !Important;
+}
+
+h3 {
+  font-size: 18px !Important;
+  font-weight: 100;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 16px !Important;
+}
+
+span {
+  font-weight: 500 !Important;
+}
+
+table {
+  width: 100%;
+}
+
+/* ---------------------------- Section - All or multiple sections at a go */
+section {
+  padding: 2em 0;
+}
+
+.content-wrap {
+  padding: 1.5em;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* apply 'theme' class to any element to change color scheme for entire site */
+.theme {
+  background-color: #333;
+  color: #fff;
+}
+
+/* ------------------------------------ Section - Header */
+
+header h1 {
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 300;
+}
+
+header ul {
+  width: 100%;
+  margin: 0;
+  padding-inline-start: 0px;
+  padding: 10px 0;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 12px 18px;
+}
+
+/* note that the <Link> tag is an <a> tag in effect */
+header ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #bfbfbf;
+  padding: 10px 10px;
+  border: 2px solid #333;
+}
+
+header ul li a:hover {
+  color: #fff;
+  border-color: #4CAE51;
+}
+
+/* ------------------------------------ Section - Hero */
+
+#hero {
+  background-image: url("images/dwyan_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 110px;
+  height: 500px
+}
+
+/* ------------------------------------ Section - Work Experience */
+
+#work h1 {
+  margin-bottom: 25px;
+}
+
+#work .avatar-work {
+  margin: 10px;
+}
+
+#work h4,
+#work p {
+  text-align: left;
+  color: #000;
+}
+/*------------------------------------- Section - Skills */
+
+#skills table {
+  background-color: #cecccc;
+}
+
+#skills table,
+#skills th,
+#skills td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+#skills th,
+#skills td {
+  padding: 12px;
+}
+
+#skills h3 {
+  margin-bottom: 30px;
+}
+
+/*------------------------------------- Section - Education */
+
+#education table {
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+#education table > tbody > tr > td:last-child {
+  text-align: left;
+}
+
+#education img {
+  width: 100px;
+  border-radius: 15px;
+}
+
+#education td {
+  padding: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #5b5959;
+}
+
+#education button {
+  margin-top: 15px;
+  display: none;
+}
+
+/*------------------------------------- Section - Professional Links */
+
+#prolinks a {
+  color: #5F5F5F;
+}
+
+/*------------------------------------- Section - Footer */
+footer {
+  padding: 2em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p {
+  font-size: 14px;
 }

@@ -1,0 +1,21 @@
+/* for screen sizes up to 1000 pixels */
+#about-page {
+    margin-top: 90px;
+    padding: 0;
+}
+
+#about-page p {
+    text-align: left;
+}
+
+#about-page .content-title {
+    text-align: left;
+}
+
+#about-page table {
+    padding: 30px 0px;
+}
+
+#DwyanGrad {
+    width: 100%;
+}

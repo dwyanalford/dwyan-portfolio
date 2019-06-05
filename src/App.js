@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './medium.css';
+// import DwyanImage from './images/dwyan_portfolio_img_1b_500.jpg';
+import WorkExperience from './components/WorkExperience'
+import SkillSet from './components/SkillSet'
+import ProLinks from './components/ProLinks'
+import Education from './components/Education'
+import Portfolio from './components/Portfolio'
+import Header from './components/Navigation'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Header />
+        <section id="hero" className="w3-row theme"></section>
+        <SkillSet />
+        <Portfolio />
+        <WorkExperience />
+        <Education />
+        <ProLinks />
+        <Footer />
+      </div>
   );
 }
 
 export default App;
+
+// <div id="main-image">
+//<img src={ DwyanImage } alt="Dwyan Alford"/></div>
