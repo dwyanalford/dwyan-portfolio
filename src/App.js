@@ -1,6 +1,8 @@
-import React from 'react';
-import './App.css';
-import './medium.css';
+import React from 'react'
+import './App.css'
+import './medium.css'
+import './css/responsive.css'
+
 // import DwyanImage from './images/dwyan_portfolio_img_1b_500.jpg';
 import WorkExperience from './components/WorkExperience'
 import SkillSet from './components/SkillSet'
@@ -14,7 +16,7 @@ function App() {
   return (
       <div>
         <Header />
-        <section id="hero" className="w3-row theme"></section>
+        <section id="hero" className="row theme"></section>
         <SkillSet />
         <Portfolio />
         <WorkExperience />
@@ -26,6 +28,3 @@ function App() {
 }
 
 export default App;
-
-// <div id="main-image">
-//<img src={ DwyanImage } alt="Dwyan Alford"/></div>

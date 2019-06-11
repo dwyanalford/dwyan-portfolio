@@ -1,6 +1,7 @@
 /* for screen sizes up to 1000 pixels */
+@media only screen and (max-width: 1000px) {
 #about-page {
-    margin-top: 90px;
+    margin-top: 120px;
     padding: 0;
 }
 
@@ -19,3 +20,29 @@
 #DwyanGrad {
     width: 100%;
 }
+}
+
+
+/* for screen sizes up to 1000 pixels */
+@media only screen and (min-width: 1001px) {
+    #about-page {
+        margin-top: 120px;
+        padding: 0;
+    }
+    
+    #about-page p {
+        text-align: left;
+    }
+    
+    #about-page .content-title {
+        text-align: left;
+    }
+    
+    #about-page table {
+        padding: 30px 0px;
+    }
+    
+    #DwyanGrad {
+        width: 100%;
+    }
+    }
