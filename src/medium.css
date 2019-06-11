@@ -1,8 +1,9 @@
-/* Large devices (laptops/desktops, 1,001px and up to 1,499 px) */
+/* Large devices (laptops/desktops, 1,001px and up) and on screens 
+larger than 1500px sections will expand to 3 per row based on 
+responsive.css */
 @media only screen and (min-width: 1001px) {
   body {
-    /* background-color: #333; */
-    background-color: #fff;
+    background-color: #333;
   }
 
   h1 {
@@ -13,32 +14,10 @@
     color: #d6d6d6;
   }
 
-  section {
-    height: 400px;
-    /* border: 1px solid #fff; */
-  }
-
-  #hero,
-  #portfolio,
-  #education {
-    width: 50%;
-    float: left;
-  }
-
-  #hero,
-  #portfolio {
-    margin-top: 50px;
-  }
-
-  #portfolio,
-  #work {
-    padding-top: 0;
-  }
-
-  #skills,
-  #work {
-    width: 50%;
-    float: right;
+  /* adjustment to the width of all content within each section
+  for larger screens */
+  .content-wrap {
+    width: 85%;
   }
 
   #prolinks p {
@@ -46,7 +25,6 @@
   }
 
   #prolinks table {
-    /* background-color: #cecccc; */
     background-color: #fff;
     border-radius: 5px;
     padding: 40px;
@@ -54,20 +32,6 @@
 
   #work {
     padding-bottom: 5px;
-  }
-
-  #work,
-  #skills {
-    margin-top: 50px;
-  }
-
-  #skills,
-  #hero {
-    height: 500px;
-  }
-
-  #skills td {
-    border: 1px solid #777;
   }
 
   #education td {

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillSet = () => {
  return (
-   <section id="skills" className="grid">
+   <section id="skills" className="col">
      <div className="content-wrap">
        <h1 className="content-title">Full Stack Javascript Developer</h1>
        <h3>Web Technologies I use to write my code:</h3>

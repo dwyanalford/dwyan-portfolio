@@ -3,8 +3,8 @@ import '../css/responsive.css'
 
 const ProLinks = () => {
  return (
-   <section id="prolinks" className="row">
-     <div className="col-12">
+   <section id="prolinks" className="col">
+     <div className="content-wrap">
        <h1 className="content-title">Professional Links</h1><br />
        <table>
          <tbody>

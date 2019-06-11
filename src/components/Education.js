@@ -5,7 +5,7 @@ import Nyu from '../images/nyu_logo.jpg';
 
 const Education = () => {
  return (
-   <section id="education" className="grid theme">
+   <section id="education" className="col">
      <div className="content-wrap">
        <h1 className="content-title">Formal Education</h1>
       <table>
@@ -14,7 +14,7 @@ const Education = () => {
             <td><img src={ Gwu } alt="George Washington University Logo"/></td>
             <td><p><b>George Washington University (2017)</b><br />Certification: Full Stack Web Developer</p>
             <button href="https://bootcamp.cps.gwu.edu/"
-              target="_blank" rel="noopener noreferrer" className="w3-button w3-green">View Course Details Online</button>
+              target="_blank" rel="noopener noreferrer" className="button">View Course Details Online</button>
             </td>
           </tr>
           <tr>

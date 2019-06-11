@@ -16,12 +16,14 @@ function App() {
   return (
       <div>
         <Header />
-        <section id="hero" className="row theme"></section>
-        <SkillSet />
-        <Portfolio />
-        <WorkExperience />
-        <Education />
-        <ProLinks />
+        <div className="row">
+          <section id="hero" className="col"></section>
+          <SkillSet />
+          <Portfolio />
+          <WorkExperience />
+          <Education />
+          <ProLinks />
+        </div>
         <Footer />
       </div>
   );
