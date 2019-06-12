@@ -14,7 +14,7 @@ const Education = () => {
             <td><img src={ Gwu } alt="George Washington University Logo"/></td>
             <td><p><b>George Washington University (2017)</b><br />Certification: Full Stack Web Developer</p>
             <button href="https://bootcamp.cps.gwu.edu/"
-              target="_blank" rel="noopener noreferrer" className="button">View Course Details Online</button>
+              target="_blank" rel="noopener noreferrer" className="button">Course Details</button>
             </td>
           </tr>
           <tr>

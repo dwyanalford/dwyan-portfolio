@@ -7,7 +7,7 @@ import '../css/responsive.css'
 const Navigation = () => {
     return (
     <header className="theme row">
-        <div className="col-12">
+        <div className="col-12 fixed-top-nav">
             <div id='header-name'>
                 <h1 className="w3-wide">dwyan alford</h1>
             </div>
