@@ -6,10 +6,9 @@ const Portfolio = () => {
    <section id="portfolio" className="col">
      <div className="content-wrap">
        <h1 className="content-title">My Portfolio</h1>
-       <p>...is exactly where you are right now - <code>dwyanalford.com</code>
-       <br/>The web app I built using Javascript and the MERN stack. <br />(Mongo, Express, React and Node)
-       as well as a number of <br />other dependencies that you can find in the <em>package.json.</em>
-       <br />Souce code for the private version of the full app <br />can be viewed in
+       <p>...is exactly where you are right now - <code>dwyanalford.com</code>The web app I built using Javascript, the MERN stack in particular. (Mongo, Express, React and Node)
+       as well as a number of other dependencies that you can find in the <em>package.json.</em>
+       Source code for this version of the app can be viewed in
        <a href="https://github.com/dwyanalford" target="_blank" rel="noopener noreferrer"> my github respository.</a></p>
      </div><br/>
      <button>

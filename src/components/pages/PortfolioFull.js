@@ -126,8 +126,9 @@ const PortfolioFull = () => {
                         <p>*<strong> 25% Office and 75% Remote</strong>.</p>
                     </div>      
                 </div> 
+                
             </div>
-            <ProLinks />
+            
             <Footer />
         </section>
         
