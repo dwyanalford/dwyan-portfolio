@@ -44,3 +44,26 @@ section {
   #portfolio-6:hover .content {
     opacity: 1;
 }
+
+/* adjust for fixed nav on screen sizes up to 999 pixels  */
+@media only screen and (max-width:999px) {
+    #portfolio-1 {
+        margin-top: 175px;
+    }
+}
+
+    /* adjust for fixed nav on screen sizes 1000 to 1499 pixels  */
+@media only screen and (min-width:1000px) {
+    #portfolio-1,
+    #portfolio-2 {
+        margin-top: 150px;
+    }
+}
+
+   /* adjust for fixed nav on screen sizes 1000 to 1499 pixels  */
+   @media only screen and (min-width:1500px) {
+    #portfolio-3 {
+        margin-top: 150px;
+    }
+}
+

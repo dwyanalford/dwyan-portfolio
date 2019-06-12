@@ -41,5 +41,15 @@ responsive.css */
     margin-top: 15px;
     display: block;
   }
+  #skills {
+    margin-top: 125px;
+  }
 
+}
+
+/* adjust for fixed nav on screen sizes 1000 to 1499 pixels  */
+@media only screen and (min-width:1500px) {
+  #portfolio {
+      margin-top: 125px;
+  }
 }

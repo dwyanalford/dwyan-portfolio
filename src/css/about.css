@@ -41,6 +41,9 @@
     #DwyanGrad {
         width: 100%;
     }
+    #about-section-1 {
+    margin-top: 120px;
+    }
 }
 
 /* adjustment of image size as screen gets larger */
@@ -74,7 +77,10 @@
         background-size: cover;
         background-position: center;
       }
-    
+      #about-section-1,
+      #about-section-2 {
+      margin-top: 137px;
+      }
 }
 
 /* for screen sizes higher than 1499 pixels */
@@ -87,4 +93,7 @@
     #about-section-3 {
         border: 1px dashed rgb(110, 110, 110);
     }
+    #about-section-3 {
+      margin-top: 137px;
+      }
 }

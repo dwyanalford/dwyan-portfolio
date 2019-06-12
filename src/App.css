@@ -87,12 +87,10 @@ section {
 
 /* ------------------------------------ Section - Header */
 header {
-  position: relative;
-}
-
-#fixed-top-nav {
   position: fixed;
   top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 header h1 {
@@ -137,6 +135,11 @@ header ul li a:hover,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* adjust the hero image section for the fixed nav above it */
+#hero {
+  margin-top: 125px;
 }
 
 /* ------------------------------------ Section - Work Experience */
