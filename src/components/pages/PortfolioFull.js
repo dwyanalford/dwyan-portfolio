@@ -129,8 +129,10 @@ const PortfolioFull = () => {
                 
             </div>
             
-            <Footer />
+            
         </section>
+
+        <Footer />
         
         
     </div>
