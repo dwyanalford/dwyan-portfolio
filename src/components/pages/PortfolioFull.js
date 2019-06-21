@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../Navigation'
 import Footer from '../Footer'
-import ProLinks from '../ProLinks'
 import '../../css/portfolio.css'
 import Portfolio1 from '../../images/portfolio-dwyanalford.jpg'
 import Portfolio2 from '../../images/portfolio-musicpower.jpg'
