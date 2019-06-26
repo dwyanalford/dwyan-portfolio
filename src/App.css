@@ -116,24 +116,18 @@ header ul li {
 header ul li a {
   text-decoration: none;
   font-size: 18px;
-  /* color: #bfbfbf; */
   padding: 10px 12px;
   border: 2px solid #333;
-  background: #333;
+  color: #bfbfbf;
 }
 
 header ul li a:hover {
-  color: #fff;
   border-color: #4CAE51;
-}
-
-/* .inactive {
-  color: #bfbfbf;
 }
 
 .active {
   color: #4CAE51;
-} */
+}
 
 /* ------------------------------------ Section - Hero */
 
