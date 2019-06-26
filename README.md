@@ -1,3 +1,5 @@
+![Image of Dwyan](src/images/dwyan-avatar-2.jpg)
+
 ## Dwyan Alford's Portfolio Site
 
 Here is what I used to build this project:
