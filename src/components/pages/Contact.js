@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Header from '../Navigation'
 import Footer from '../Footer'
-const axios = require('axios');
+const axios = require('axios')
+const moment = require('moment')
 require('../../css/contact.css')
 
 class ContactForm extends Component {
@@ -47,13 +48,14 @@ class ContactForm extends Component {
     }
 
     onSubmit(e) {
-        e.preventDefault();
+        e.preventDefault(); 
         
         axios.post('http://localhost:3001/contacts', {
             name: this.state.name,
             email: this.state.email,
             reason: this.state.reason,
-            message: this.state.message
+            message: this.state.message,
+            messageDate: moment(this.state.messageDate).format("ddd, MMM Do, h:mm a")
           })
           .then(function (response) {
             const name = response.data.name;
@@ -63,7 +65,7 @@ class ContactForm extends Component {
             const element = document.getElementById("contact-alert-message");
             const cName = "contact-animation";
             const arr = element.className.split(" ");
-            if (arr.indexOf(cName) == -1) {
+            if (arr.indexOf(cName) === -1) {
                 element.className += " " + cName;
             }
 

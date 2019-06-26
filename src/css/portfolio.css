@@ -1,9 +1,5 @@
-body {
-    height: 750px;
-}
-
-section {
-    padding: 0;
+#portfolio-full > div {
+    padding-bottom: 100px;
 }
 
 #portfolio-full img {
@@ -30,7 +26,7 @@ section {
     background: rgba(0, 0, 0, 0.9); /* Black background with 0.5 opacity */
     color: #f1f1f1;
     width: 90%;
-    padding: 30px;
+    padding: 65px;
     text-align: left;
     opacity: 0;
     border: 1px dashed #4CAE51;

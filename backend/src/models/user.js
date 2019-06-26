@@ -1,8 +1,10 @@
 const mongoose = require('mongoose')
+const { Schema } = mongoose
 const validator = require('validator')
+// const moment = require('moment')
 
 // define the model
-const Contact = mongoose.model('Contact', {
+const userContact = new Schema({
     name: {
         type: String,
         required: true,
@@ -27,7 +29,13 @@ const Contact = mongoose.model('Contact', {
         type: String,
         trim: true,
         required: true
+    },
+    messageDate: {
+        type: String,
+        default: Date()
     }
 })
+
+const Contact = mongoose.model('Contact', userContact)
 
 module.exports = Contact

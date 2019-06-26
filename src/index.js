@@ -7,6 +7,7 @@ import App from './App'
 import About from './components/pages/About'
 import PortfolioFull from './components/pages/PortfolioFull'
 import Contact from './components/pages/Contact'
+import Admin from './components/pages/Admin'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route path='/about' component={About}></Route>
         <Route path='/portfolio' component={PortfolioFull}></Route>
         <Route path='/contact' component={Contact}></Route>
+        <Route path='/admin' component={Admin}></Route>
     </Switch>
 </Router>, 
 document.getElementById('root'));

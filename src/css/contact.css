@@ -33,3 +33,30 @@
     75% {margin-top: 100px;}
     100% {margin-top: -200px;}
   }
+
+/*------------------------------------- Contact Form styles */
+#contact-form {
+    width: 480px;
+    border: 1px dashed #b4b6b4;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background-color: #444343;
+  }
+  
+  input[type=text], 
+  input[type=email],
+  select, 
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    resize: vertical;
+  }
