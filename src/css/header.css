@@ -1,0 +1,47 @@
+/* ------------------------------------ Section - Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    border-bottom: 1px dashed #5c5c5c;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding-top: 20px;
+    color: #bfbfbf;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+  }
+  
+  header ul {
+    width: 100%;
+    margin: 0;
+    padding-inline-start: 0px;
+    padding: 20px 0;
+  }
+  
+  header ul li {
+    display: inline-block;
+    padding: 12px 14px;
+  }
+  
+  /* note that the <Link> tag is an <a> tag in effect */
+  header ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 12px;
+    border: 2px solid #333;
+    color: #bfbfbf;
+  }
+  
+  header ul li a:hover {
+    border-color: #4CAE51;
+  }
+  
+  .active {
+    color: #4CAE51;
+    border-color:#4CAE51;
+  }

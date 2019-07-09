@@ -5,7 +5,6 @@ import Nyu from '../images/nyu_logo.jpg';
 
 const Education = () => {
  return (
-   <section id="education" className="col">
      <div className="content-wrap">
        <h1 className="content-title">Formal Education</h1>
       <table>
@@ -24,7 +23,6 @@ const Education = () => {
         </tbody>
       </table>
      </div>
-   </section>
  )
 }
 

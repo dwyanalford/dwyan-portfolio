@@ -6,13 +6,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1em;
-  line-height: 1.5;
-  text-align: center;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
   background-color: #fff;
+}
+
+body, button, a, p, h1, h2, h3, h4, span, label, option, input {
+  font-family: 'Barlow', sans-serif;
+}
+
+body, button, a, p, span, label, option, input {
+  font-size: 16px;
 }
 
 button {
@@ -23,7 +25,6 @@ button {
   text-decoration: none;
   border-radius: 10px;
   border: none;
-  font-size: 18px;
 }
 
 button:hover {
@@ -33,17 +34,14 @@ button:hover {
 p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
 }
 
 a {
   color: #4CAE51;
-  font-weight: bold;
 }
 
 h1 {
   font-size: 24px;
-  font-weight: 600;
 }
 
 h2 {
@@ -52,16 +50,14 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-weight: 100;
-  font-style: italic;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 span {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 table {
@@ -71,12 +67,17 @@ table {
 /* ---------------------------- Section - All or multiple sections at a go */
 section {
   height: 450px;
+  /* border: 1px solid blue; */
 }
 
 .content-wrap {
   padding: 1.1em;
-  width: 500px;
   margin: 0 auto;
+  width: 500px;
+}
+
+.content-title {
+  text-align: center;
 }
 
 /* apply 'theme' class to any element to change color scheme for entire site */
@@ -85,174 +86,20 @@ section {
   color: #fff;
 }
 
-/* ------------------------------------ Section - Header */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
+/* Large devices (laptops/desktops, 1,001px and up) and on screens 
+larger than 1500px sections will expand to 3 per row based on 
+responsive.css */
+@media only screen and (min-width: 1001px) {
+  body {
+    background-color: #333;
+  }
 
-header h1 {
-  margin: 0;
-  padding-top: 20px;
-  font-weight: 300;
-  color: #bfbfbf;
-}
+  h1 {
+    color: #fff;
+  }
 
-header ul {
-  width: 100%;
-  margin: 0;
-  padding-inline-start: 0px;
-  padding: 20px 0;
-}
+  h2, h3, h4, p, span {
+    color: #d6d6d6;
+  }
 
-header ul li {
-  display: inline-block;
-  padding: 12px 14px;
-}
-
-/* note that the <Link> tag is an <a> tag in effect */
-header ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 12px;
-  border: 2px solid #333;
-  color: #bfbfbf;
-}
-
-header ul li a:hover {
-  border-color: #4CAE51;
-}
-
-.active {
-  color: #4CAE51;
-}
-
-/* ------------------------------------ Section - Hero */
-
-#hero {
-  background-image: url("images/dwyan_large.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* adjust the hero image section for the fixed nav above it */
-#hero {
-  margin-top: 120px;
-}
-
-/* ------------------------------------ Section - Work Experience */
-#work {
-  padding-top: 30px;
-  background-color: #333;
-}
-
-#work h1 {
-  margin-bottom: 25px;
-  color: #fff;
-}
-
-#work .avatar-work {
-  margin: 10px;
-}
-
-#work h4,
-#work p {
-  text-align: left;
-  color: #000;
-}
-
-/*------------------------------------- Section - Skills */
-#skills {
-  background-color: #333;
-}
-
-#skills td {
-  background-color: #fff;
-  border: 1px solid #777;
-}
-
-#skills table,
-#skills th,
-#skills td {
-  border: 1px solid rgb(124, 123, 123);
-  border-collapse: collapse;
-}
-
-#skills th,
-#skills td {
-  padding: 12px;
-}
-
-#skills h1 {
-  color: #fff;
-}
-
-#skills h3 {
-  margin-bottom: 30px;
-  color: #d6d6d6;
-}
-
-/* ------------------------------------ Section - Portfolio */
-#portfolio {
-  padding-top: 30px;
-}
-
-/*------------------------------------- Section - Education */
-#education {
-  background-color: #333;
-  padding-top: 20px;
-}
-
-#education table {
-  margin: 0 auto;
-}
-
-#education table > tbody > tr > td:last-child {
-  text-align: left;
-  color: #d6d6d6;
-}
-
-#education h1 {
-  color: #fff;
-}
-
-#education img {
-  width: 100px;
-  border-radius: 15px;
-}
-
-#education td {
-  padding: 15px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #5b5959;
-}
-
-#education button {
-  display: none;
-}
-
-/*------------------------------------- Section - Professional Links */
-#prolinks {
-  padding-top: 20px;
-  height: 375px;
-}
-
-#prolinks a {
-  color: #5F5F5F;
-}
-
-/*------------------------------------- Section - Footer */
-footer {
-  padding: 2em;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  font-size: 14px;
 }

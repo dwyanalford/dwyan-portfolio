@@ -24,6 +24,8 @@ const PortfolioFull = () => {
                             <li>Node.js</li>
                             <li>React.js</li>
                             <li>React Router</li>
+                            <li>Express</li>
+                            <li>Mongo DB</li>
                         </ul>
                         <p>*<strong> Responsive Design</strong>.</p>
                         <p style={{marginTop: '40px'}}>Code & Files - <a href="https://github.com/dwyanalford/dwyan-portfolio" target="_blank" rel="noopener noreferrer">my github respository</a>.

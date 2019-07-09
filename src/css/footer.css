@@ -1,0 +1,12 @@
+/*------------------------------------- Section - Footer */
+footer {
+    padding: 2em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }

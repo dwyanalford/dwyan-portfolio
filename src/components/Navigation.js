@@ -5,10 +5,10 @@ import '../css/responsive.css'
 class Navigation extends Component {
     render() {
         return (
-            <header className="theme row">
+            <header className="row theme">
                 <div className="col-12 fixed-top-nav">
                     <div id='header-name'>
-                        <h1 className="w3-wide">dwyan alford</h1>
+                        <h1 className="w3-wide">Dwyan Alford</h1>
                     </div>
                     <ul>
                         <li><NavLink to='/' exact activeClassName="active" >Home</NavLink></li>

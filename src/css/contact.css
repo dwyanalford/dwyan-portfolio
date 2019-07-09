@@ -1,5 +1,6 @@
 #contact-container {
     position: relative;
+    padding-top: 100px;
 }
 
 .contact-alert-style {
@@ -38,14 +39,14 @@
 #contact-form {
     width: 480px;
     border: 1px dashed #b4b6b4;
-    margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
     color: #fff;
     text-align: left;
     font-size: 16px;
     background-color: #444343;
-    margin-bottom: 200px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px rgb(170, 170, 170);
   }
   
   input[type=text], 
@@ -60,4 +61,15 @@
     margin-top: 6px;
     margin-bottom: 30px;
     resize: vertical;
+  }
+
+  @media only screen and (min-width: 1001px) {
+    #contact-background-img {
+      background-image: url("../images/contact/dwyan-alford-desk-computer.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 900px;
+      /* margin-top: 125px; */
+    }
   }

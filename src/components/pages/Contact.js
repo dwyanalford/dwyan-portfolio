@@ -88,9 +88,9 @@ class ContactForm extends Component {
 
     render() {
     return (
-    <div>
+    <div id="contact-background-img">
         <Header />
-        <div className="row" style={{ marginTop: '150px'}}>
+        <div className="row" style={{ marginTop: '157px'}}>
             <div id="contact-container" className="col-12">
                 <form id="contact-form" onSubmit={this.onSubmit}>
 
@@ -111,7 +111,7 @@ class ContactForm extends Component {
                     <label>Message</label>
                     <textarea name="message" value={this.state.message} onChange={this.onChangeMessage}></textarea>
 
-                    <button>Send Message</button>
+                    <button>Send Message to Dwyan</button>
                 </form>
                 <div id="contact-alert">
                     <div className="contact-alert-style">

@@ -2,10 +2,9 @@ import React from 'react';
 
 const SkillSet = () => {
  return (
-   <section id="skills" className="col">
      <div className="content-wrap">
-       <h1 className="content-title">Full Stack Javascript Developer</h1>
-       <h3>Web Technologies I use to write my code:</h3>
+       <h1 className="content-title">Full Stack Web Developer</h1>
+       <h3>Web Technologies Skill Set:</h3>
        <table id="skillsTable">
        <tbody>
          <tr>
@@ -16,22 +15,21 @@ const SkillSet = () => {
          <tr>
            <td>Javascript</td>
            <td>React.js</td>
-           <td>Visual Studio Code</td>
+           <td>Node.js</td>
          </tr>
          <tr>
            <td>CSS</td>
            <td>Adobe Photoshop (Image Editing / Optimizing)</td>
-           <td>Full Javascript Server Side: Node.js & Express.js</td>
+           <td>Express.js</td>
          </tr>
          <tr>
            <td>HTML</td>
-           <td></td>
-           <td>Mongo DB / Mongoose</td>
+           <td>Adobe Creative Cloud</td>
+           <td>Mongo DB</td>
          </tr>
          </tbody>
        </table>
      </div>
-   </section>
  )
 }
 

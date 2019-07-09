@@ -1,0 +1,169 @@
+/* making adjustment after navigation is set to fixed positioning */
+#home-page-content {
+  margin-top: 32px;
+}
+
+body {
+  min-height: 1200px;
+}
+
+
+/* ------------------------------------ Section - Hero */
+
+#hero {
+    background-image: url("../images/dwyan_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    margin-top: 125px;
+  }
+  
+  /* ------------------------------------ Section - Work Experience */
+  #work {
+    padding-top: 30px;
+    background-color: #333;
+  }
+  
+  #work h1 {
+    margin-bottom: 25px;
+    color: #fff;
+  }
+  
+  #work .avatar-work {
+    margin: 10px;
+  }
+  
+  #work h4,
+  #work p {
+    text-align: left;
+    color: #000;
+  }
+  
+  /*------------------------------------- Section - Skills */
+    
+  #skills td {
+    background-color: rgb(218, 218, 218);
+    border: 1px solid #777;
+  }
+  
+  #skills table,
+  #skills th,
+  #skills td {
+    border: 1px solid rgb(124, 123, 123);
+    border-collapse: collapse;
+  }
+  
+  #skills th,
+  #skills td {
+    padding: 12px;
+  }
+  
+  #skills h3 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* ------------------------------------ Section - Portfolio */
+  #portfolio {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  #portfolio p {
+    text-align: left;
+  }
+  
+  /*------------------------------------- Section - Education */
+  #education {
+    background-color: #333;
+    padding-top: 20px;
+  }
+  
+  #education table {
+    margin: 0 auto;
+  }
+  
+  #education table > tbody > tr > td:last-child {
+    text-align: left;
+    color: #d6d6d6;
+  }
+  
+  #education h1 {
+    color: #fff;
+  }
+  
+  #education img {
+    width: 100px;
+    border-radius: 15px;
+  }
+  
+  #education td {
+    padding: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #5c5c5c;
+  }
+  
+  #education button {
+    display: none;
+  }
+  
+  /*------------------------------------- Section - Professional Links */
+  #prolinks {
+    padding-top: 20px;
+  }
+  
+  #prolinks a {
+    color: #5F5F5F;
+    text-align: center;
+  }
+
+
+  #hero, #skills, #portfolio, #work, #education, #prolinks {
+    border: 1px dashed #5c5c5c;
+  }
+
+
+  @media only screen and (min-width: 1001px) {
+    /* adjustment to the width of all content within each section
+    for larger screens */
+  .content-wrap {
+    width: 85%;
+  }
+
+  #prolinks p {
+    color: #000;
+  }
+
+  #prolinks table {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+  }
+
+  #work {
+    padding-bottom: 5px;
+  }
+
+  #education td {
+    border-bottom: 0;
+  }
+  #education button {
+    margin-top: 15px;
+    display: block;
+  }
+  #skills {
+    background-color: #333;
+  }
+  #skills {
+    margin-top: 125px;
+  }
+  #skills h1 {
+    color: #fff;
+  }
+  
+  #skills h3 {
+    color: #d6d6d6;
+  }
+  
+  }

@@ -27,7 +27,6 @@ class WorkExperience extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <section id="work" className="col">
         <div className="content-wrap">
           <h1 className="content-title">Work Experience</h1>
           <div>
@@ -81,8 +80,6 @@ class WorkExperience extends React.Component {
             </ExpansionPanel>
           </div>
         </div>
-      </section>
-
     );
   }
 }
