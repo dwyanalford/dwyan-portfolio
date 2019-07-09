@@ -29,3 +29,11 @@ footer {
     color: green;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 565px) {
+    #footer-copytext {
+      width: 230px;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }

@@ -45,6 +45,7 @@
     text-align: left;
     font-size: 16px;
     background-color: #444343;
+    opacity: 0.9;
     margin: 0 auto;
     box-shadow: 1px 1px 4px rgb(170, 170, 170);
   }
