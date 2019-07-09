@@ -1,6 +1,7 @@
 #contact-container {
     position: relative;
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 150px;
 }
 
 .contact-alert-style {
@@ -37,18 +38,16 @@
 
 /*------------------------------------- Contact Form styles */
 #contact-form {
-    width: 480px;
-    border: 1px dashed #b4b6b4;
-    padding: 30px;
-    border-radius: 10px;
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
-    background-color: #444343;
-    opacity: 0.9;
-    margin: 0 auto;
-    box-shadow: 1px 1px 4px rgb(170, 170, 170);
-  }
+  width: 480px;
+  border: 1px dashed #5c5c5c;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #333333;
+  margin: 0 auto;
+}
   
   input[type=text], 
   input[type=email],
@@ -64,13 +63,20 @@
     resize: vertical;
   }
 
-  @media only screen and (min-width: 1001px) {
+  #contact-background-img {
+    background-color: #333333
+  }
+
+  @media only screen and (min-width: 599px) {
     #contact-background-img {
       background-image: url("../images/contact/dwyan-alford-desk-computer.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 900px;
-      /* margin-top: 125px; */
+      /* height: 900px; */
+    }
+
+    #contact-form {
+      opacity: 0.9;
     }
   }
