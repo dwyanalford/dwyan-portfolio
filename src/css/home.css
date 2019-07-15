@@ -2,17 +2,6 @@
 #home-page-content {
   margin-top: 32px;
 }
-
-/* ------------------------------------ Section - Hero */
-
-#hero {
-    background-image: url("../images/dwyan_large.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 450px;
-    margin-top: 125px;
-  }
   
   /* ------------------------------------ Section - Work Experience */
   #work {

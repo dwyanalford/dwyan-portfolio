@@ -1,7 +1,7 @@
 /* global styles for About.js page regardless of screen size */
 #about-page {
-    margin-top: 40px;
-    padding-bottom: 150px;
+    padding-top: 27px;
+    margin-bottom: 150px;
 }
 
 #about-page h1 {
@@ -127,6 +127,7 @@ div[id^="about-section-"] {
         margin-top: 137px;
     }
 }
+
 
 /* for screen sizes higher than 1499 pixels */
 @media only screen and (min-width: 1500px) {

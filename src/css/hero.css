@@ -1,0 +1,8 @@
+#hero {
+    overflow: hidden;
+    margin-top: 125px;
+}
+
+.hero-slide img {
+    width: 100%;
+}
