@@ -1,0 +1,11 @@
+@media screen and (min-width: 1500px) {
+    #footer-social-icons i {
+        margin-right: 15px;
+    }
+    #footer-social-icons {
+        float: right;
+    }
+}
+
+  
+

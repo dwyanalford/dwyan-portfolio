@@ -4,7 +4,7 @@ const Contact = require('./src/models/user')
 const cors = require('cors')
 
 const app = express()
-const port = process.env.PORT || 3001
+const port = process.env.PORT
 
 app.use(express.json())
 app.use(cors())
