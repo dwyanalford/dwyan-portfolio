@@ -2,18 +2,18 @@
 
 # dependencies
 /node_modules
-/backend/node_modules
-/backend/config
+/client/node_modules
+/config
 /.pnp
 .pnp.js
+client/free_images
+client/psd
 
 # testing
 /coverage
 
 # production
-/build
-/free_images
-/psd
+/client/build
 
 # misc
 .DS_Store

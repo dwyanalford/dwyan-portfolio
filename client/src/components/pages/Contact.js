@@ -50,7 +50,7 @@ class ContactForm extends Component {
     onSubmit(e) {
         e.preventDefault();
 
-        axios.post('http://dwyan-alford-portfolio.herokuapp.com/contacts', {
+        axios.post('http://localhost:3001/contacts', {
             name: this.state.name,
             email: this.state.email,
             reason: this.state.reason,
