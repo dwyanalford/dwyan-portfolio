@@ -6,7 +6,7 @@ const moment = require('moment')
 require('../../css/contact.css')
 
 class ContactForm extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.onChangeName = this.onChangeName.bind(this);
@@ -48,37 +48,37 @@ class ContactForm extends Component {
     }
 
     onSubmit(e) {
-        e.preventDefault(); 
-        
-        axios.post('http://localhost:3001/contacts', {
+        e.preventDefault();
+
+        axios.post('https://dwyan-alford-portfolio.herokuapp.com/contacts', {
             name: this.state.name,
             email: this.state.email,
             reason: this.state.reason,
             message: this.state.message,
             messageDate: moment(this.state.messageDate).format("ddd, MMM Do, h:mm a")
-          })
-          .then(function (response) {
-            const name = response.data.name;
-            
-            document.getElementById("contact-alert-message").innerHTML = name + ", thank you for your message! I will get back to you shortly.";
+        })
+            .then(function (response) {
+                const name = response.data.name;
 
-            const element = document.getElementById("contact-alert-message");
-            const cName = "contact-animation";
-            const arr = element.className.split(" ");
-            if (arr.indexOf(cName) === -1) {
-                element.className += " " + cName;
-            }
+                document.getElementById("contact-alert-message").innerHTML = name + ", thank you for your message! I will get back to you shortly.";
 
-            setTimeout( () => {
-                window.location.href = "http://localhost:3000/"
-            }, 6000)
-    
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+                const element = document.getElementById("contact-alert-message");
+                const cName = "contact-animation";
+                const arr = element.className.split(" ");
+                if (arr.indexOf(cName) === -1) {
+                    element.className += " " + cName;
+                }
 
-          this.setState({
+                setTimeout(() => {
+                    window.location.href = "http://localhost:3000/"
+                }, 6000)
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+        this.setState({
             name: '',
             email: '',
             reason: '',
@@ -87,42 +87,42 @@ class ContactForm extends Component {
     }
 
     render() {
-    return (
-    <div id="contact-background-img">
-        <Header />
-        <div className="row" style={{ marginTop: '157px'}}>
-            <div id="contact-container" className="col-12">
-                <form id="contact-form" onSubmit={this.onSubmit}>
+        return (
+            <div id="contact-background-img">
+                <Header />
+                <div className="row" style={{ marginTop: '157px' }}>
+                    <div id="contact-container" className="col-12">
+                        <form id="contact-form" onSubmit={this.onSubmit}>
 
-                    <label>Name</label>
-                    <input type="text" id="name" name="name" value={this.state.name} onChange={this.onChangeName}/>
+                            <label>Name</label>
+                            <input type="text" id="name" name="name" value={this.state.name} onChange={this.onChangeName} />
 
-                    <label>Email * - required</label>
-                    <input type="email" name="email" value={this.state.email} onChange={this.onChangeEmail} required/>
+                            <label>Email * - required</label>
+                            <input type="email" name="email" value={this.state.email} onChange={this.onChangeEmail} required />
 
-                    <label>Reason for Contact</label>
-                    <select id="reason" name="reason" onChange={this.onChangeReason}>
-                    <option>Choose from these options</option>
-                    <option value="general">General</option>
-                    <option value="quotation">Request for Quote</option>
-                    <option value="opportunity">Business lead / opportunity</option>
-                    </select>
+                            <label>Reason for Contact</label>
+                            <select id="reason" name="reason" onChange={this.onChangeReason}>
+                                <option>Choose from these options</option>
+                                <option value="general">General</option>
+                                <option value="quotation">Request for Quote</option>
+                                <option value="opportunity">Business lead / opportunity</option>
+                            </select>
 
-                    <label>Message</label>
-                    <textarea name="message" value={this.state.message} onChange={this.onChangeMessage}></textarea>
+                            <label>Message</label>
+                            <textarea name="message" value={this.state.message} onChange={this.onChangeMessage}></textarea>
 
-                    <button>Send Message to Dwyan</button>
-                </form>
-                <div id="contact-alert">
-                    <div className="contact-alert-style">
-                        <p id="contact-alert-message"></p>
+                            <button>Send Message to Dwyan</button>
+                        </form>
+                        <div id="contact-alert">
+                            <div className="contact-alert-style">
+                                <p id="contact-alert-message"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </div>
+                <Footer />
             </div>
-        </div>
-        <Footer />
-    </div>
-    )
+        )
     }
 }
 
