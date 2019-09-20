@@ -2,6 +2,9 @@
   "name": "backend",
   "version": "2.0.1",
   "description": "Backend Server setup for Dwyan Alford Portfolio",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
