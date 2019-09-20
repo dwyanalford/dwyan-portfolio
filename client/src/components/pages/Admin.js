@@ -5,7 +5,7 @@ const ContactList = function ActionLink(props) {
     function handleClick(e) {
       e.preventDefault();
       
-      axios.delete('http://localhost:3001/contacts/' + props.contacts._id)
+      axios.delete('https://dwyan-alford-portfolio.herokuapp.com/contacts/' + props.contacts._id)
     //   alert(props.contacts.name + '\'s message was deleted')
     }
   
@@ -37,7 +37,7 @@ class Admin extends Component {
 
 
 componentDidMount() {
-    axios.get('http://localhost:3001/contacts')
+    axios.get('https://dwyan-alford-portfolio.herokuapp.com/contacts')
         .then( (results) => {
             this.setState( {contacts: results.data})
         }).catch( (error) => {
@@ -47,7 +47,7 @@ componentDidMount() {
 
 // This lifecycle method updates the client without refreshing
 componentDidUpdate() {
-    axios.get('http://localhost:3001/contacts')
+    axios.get('https://dwyan-alford-portfolio.herokuapp.com/contacts')
         .then( (results) => {
             this.setState( {contacts: results.data})
         }).catch( (error) => {

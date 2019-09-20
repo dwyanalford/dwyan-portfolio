@@ -71,7 +71,7 @@ class ContactForm extends Component {
 
                 setTimeout(() => {
                     window.location.href = "https://dwyan-alford-portfolio.herokuapp.com"
-                }, 6000)
+                }, 5000)
 
             })
             .catch(function (error) {
