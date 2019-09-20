@@ -70,7 +70,7 @@ class ContactForm extends Component {
                 }
 
                 setTimeout(() => {
-                    window.location.href = "http://localhost:3000/"
+                    window.location.href = "https://dwyan-alford-portfolio.herokuapp.com"
                 }, 6000)
 
             })
