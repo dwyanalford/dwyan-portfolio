@@ -126,6 +126,13 @@ div[id^="about-section-"] {
     #about-section-2 {
         margin-top: 137px;
     }
+
+    #about-section-2,
+    #about-section-4,
+    #about-section-6 {
+    background-color: #333333;
+    padding: 20px 30px;
+}
 }
 
 
