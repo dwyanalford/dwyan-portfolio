@@ -30,22 +30,6 @@ class WorkExperience extends React.Component {
         <div className="content-wrap">
           <h1 className="content-title">Work Experience</h1>
           <div>
-            <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
-              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                <Grid container alignItems="center">
-                  <Avatar alt="Brooklyn View Enterprises avatar" src={ Bve_avatar } className="avatar-work" />
-                  <h4>Brooklyn View Enterprises, LLC</h4>
-                </Grid>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
-                <p><span>Dates:</span> 2015 - Present<br/>
-                <span>Technologies:</span> Shopify CMS (Liquid), Javascript/JQuery, HTML, CSS, Adobe Creative Suite<br/>
-                <span>Title & Description:</span> Web Developer / Graphic Design - develop and maintain
-                all aspects of the company website including photography and image editing.<br/>
-                <span>Supervisor:</span> Owen<br/>
-                <span>Link to website:</span> <a href="https://waxandoils.com/" target="_blank" rel="noopener noreferrer">waxandoils.com</a></p>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <Grid container alignItems="center">
@@ -60,6 +44,22 @@ class WorkExperience extends React.Component {
                 all aspects of the company website including image editing.<br/>
                 <span>Supervisor:</span> Heather Burchfield<br/>
                 <span>Link to website:</span> <a href="http://careteamhealth.com/" target="_blank" rel="noopener noreferrer">careteamhealth.com</a></p>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+            <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
+              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+                <Grid container alignItems="center">
+                  <Avatar alt="Brooklyn View Enterprises avatar" src={ Bve_avatar } className="avatar-work" />
+                  <h4>Brooklyn View Enterprises, LLC</h4>
+                </Grid>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails>
+                <p><span>Dates:</span> 2015 - Present<br/>
+                <span>Technologies:</span> Shopify CMS (Liquid), Javascript/JQuery, HTML, CSS, Adobe Creative Suite<br/>
+                <span>Title & Description:</span> Web Developer / Graphic Design - develop and maintain
+                all aspects of the company website including photography and image editing.<br/>
+                <span>Supervisor:</span> Owen<br/>
+                <span>Link to website:</span> <a href="https://waxandoils.com/" target="_blank" rel="noopener noreferrer">waxandoils.com</a></p>
               </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
